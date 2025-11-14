@@ -26,8 +26,11 @@
         <!-- Partie gauche : Formulaire -->
         <article class="login-form">
           <h1>Connexion à StockManager<br />Dashboard</h1>
+          <p class="login-subtitle">
+            Accédez à votre espace de pilotage pour suivre vos entrées et sorties en temps réel.
+          </p>
 
-          <form action="autres/pages/dashboard.html" method="get">
+          <form action="autres/pages/dashboard.html" method="get" aria-label="Formulaire de connexion">
             <div class="form-group">
               <label for="username">Nom d'utilisateur ou email</label>
               <input
@@ -55,9 +58,13 @@
                 <input type="checkbox" />
                 Se souvenir de moi
               </label>
+              <a href="#" class="link-help">Besoin d'aide ?</a>
             </div>
 
-            <button type="submit" class="btn-primary">Se connecter</button>
+            <button type="submit" class="btn-primary">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              Se connecter
+            </button>
 
             <div class="links">
               <p>
@@ -80,6 +87,27 @@
             Gérez vos appareils électroniques, vos entrées et vos sorties de
             stock facilement avec une interface claire et rapide.
           </p>
+
+          <div class="login-highlight">
+            <span class="highlight-badge">Nouveautés 2024</span>
+            <p>Automatisation des inventaires, alertes intelligentes et rapports prêts à l'emploi.</p>
+          </div>
+
+          <ul class="login-benefits" aria-label="Avantages clés">
+            <li><i class="fa-solid fa-gauge-high"></i> Suivi en temps réel des stocks</li>
+            <li><i class="fa-solid fa-shield-check"></i> Données sécurisées et chiffrées</li>
+            <li><i class="fa-solid fa-diagram-project"></i> Rapports exportables en un clic</li>
+          </ul>
+
+          <div class="login-meta">
+            <span><i class="fa-solid fa-headset"></i> Support prioritaire</span>
+            <span><i class="fa-solid fa-clock"></i> Disponibilité 24h/24</span>
+          </div>
+
+          <a class="login-secondary-link" href="autres/pages/dashboard.html">
+            Découvrir le tableau de bord
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </aside>
       </section>
     </main>

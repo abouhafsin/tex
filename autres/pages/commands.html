@@ -30,7 +30,7 @@
             <nav class="menu">
                 <a href="dashboard.html"><i class="fa-solid fa-table-columns"></i> Tableau de Bord</a>
                 <a href="analytics.html"><i class="fa-solid fa-chart-pie"></i> Analytics</a>
-                <a href="commandes.html" class="active"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+                <a href="commands.html" class="active"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
                 <a href="parametres.html"><i class="fa-solid fa-gear"></i> Paramètres</a>
                 <a href="rapports.html"><i class="fa-solid fa-file-lines"></i> Rapports</a>
                 <a href="notification.html"><i class="fa-solid fa-bell"></i> Notifications</a>
@@ -51,12 +51,28 @@
 
         <!-- 🔝 TOPBAR -->
         <header class="topbar">
-            <h1>Gestion de Stock - Produits Électroniques</h1>
+            <div class="topbar-left">
+                <div class="title-group">
+                    <h1>Gestion de Stock - Produits Électroniques</h1>
+                    <p class="topbar-subtitle">Pilotage des commandes et du fulfillment</p>
+                </div>
+                <form class="topbar-search" role="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Rechercher une commande, un client..." aria-label="Rechercher une commande">
+                </form>
+            </div>
             <div class="user-top">
-                <i class="fa-solid fa-bell"></i>
-                <span class="notif-badge">3</span>
-                <i class="fa-solid fa-user"></i>
-                <span class="username">Administrateur</span>
+                <button class="btn-icon" type="button" aria-label="Ouvrir le centre de notifications">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="notif-badge">3</span>
+                </button>
+                <button class="btn-icon" type="button" aria-label="Afficher les paramètres rapides">
+                    <i class="fa-solid fa-sliders"></i>
+                </button>
+                <div class="user-badge">
+                    <span class="username">Administrateur</span>
+                    <i class="fa-solid fa-user"></i>
+                </div>
             </div>
         </header>
 

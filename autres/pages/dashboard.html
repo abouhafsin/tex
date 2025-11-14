@@ -60,12 +60,34 @@
       <main class="main-content">
         <!-- Topbar -->
         <header class="topbar">
-          <h1>Gestion de Stock - Produits Électroniques</h1>
+          <div class="topbar-left">
+            <div class="title-group">
+              <h1>Gestion de Stock - Produits Électroniques</h1>
+              <p class="topbar-subtitle">
+                Surveillez vos niveaux de stock et vos commandes critiques en temps réel.
+              </p>
+            </div>
+            <form class="topbar-search" role="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                placeholder="Rechercher un produit, un fournisseur, une référence..."
+                aria-label="Rechercher un produit"
+              />
+            </form>
+          </div>
           <div class="user-top">
-            <i class="fa-solid fa-bell"></i>
-            <span class="notif-badge">3</span>
-            <span class="username">Administrateur</span>
-            <i class="fa-solid fa-user"></i>
+            <button class="btn-icon" type="button" aria-label="Ouvrir le centre de notifications">
+              <i class="fa-solid fa-bell"></i>
+              <span class="notif-badge">3</span>
+            </button>
+            <button class="btn-icon" type="button" aria-label="Afficher les paramètres rapides">
+              <i class="fa-solid fa-sliders"></i>
+            </button>
+            <div class="user-badge">
+              <span class="username">Administrateur</span>
+              <i class="fa-solid fa-user"></i>
+            </div>
           </div>
         </header>
 
@@ -104,6 +126,133 @@
                 <p>Commandes en Attente</p>
               </div>
             </div>
+          </div>
+
+          <!-- Aperçu avancé -->
+          <div class="inventory-overview">
+            <article class="card inventory-health">
+              <header class="card-header">
+                <div>
+                  <h3><i class="fa-solid fa-heart-pulse"></i> Santé du stock</h3>
+                  <p>Capacité utilisée sur les catégories stratégiques</p>
+                </div>
+                <span class="trend-badge up"><i class="fa-solid fa-arrow-trend-up"></i> +4,3%</span>
+              </header>
+              <ul class="inventory-metrics">
+                <li>
+                  <div class="metric-title">
+                    <span>Ordinateurs portables</span>
+                    <span class="metric-value">520 unités</span>
+                  </div>
+                  <div class="progress-bar">
+                    <span class="progress-fill primary" style="width: 78%"></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="metric-title">
+                    <span>Smartphones</span>
+                    <span class="metric-value">312 unités</span>
+                  </div>
+                  <div class="progress-bar">
+                    <span class="progress-fill success" style="width: 64%"></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="metric-title">
+                    <span>Accessoires & audio</span>
+                    <span class="metric-value">198 unités</span>
+                  </div>
+                  <div class="progress-bar">
+                    <span class="progress-fill warning" style="width: 52%"></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="metric-title">
+                    <span>TV & affichage</span>
+                    <span class="metric-value">96 unités</span>
+                  </div>
+                  <div class="progress-bar">
+                    <span class="progress-fill danger" style="width: 36%"></span>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card inventory-activity">
+              <header class="card-header">
+                <div>
+                  <h3><i class="fa-solid fa-wave-square"></i> Activité récente</h3>
+                  <p>Historique des mouvements importants</p>
+                </div>
+              </header>
+              <ul class="timeline">
+                <li>
+                  <span class="timeline-bullet success"></span>
+                  <div>
+                    <p class="timeline-title">Réassort validé</p>
+                    <p class="timeline-meta">MacBook Pro 16" &mdash; 25 unités ajoutées</p>
+                    <time>Il y a 12 min</time>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-bullet warning"></span>
+                  <div>
+                    <p class="timeline-title">Seuil critique</p>
+                    <p class="timeline-meta">AirPods Pro 2 &mdash; stock à 3 unités</p>
+                    <time>Il y a 32 min</time>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-bullet info"></span>
+                  <div>
+                    <p class="timeline-title">Nouvelle commande fournisseur</p>
+                    <p class="timeline-meta">iPhone 15 Pro &mdash; livraison estimée 24/06</p>
+                    <time>Il y a 1 h</time>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card inventory-actions">
+              <header class="card-header">
+                <div>
+                  <h3><i class="fa-solid fa-bolt"></i> Actions rapides</h3>
+                  <p>Optimisez vos opérations quotidiennes</p>
+                </div>
+              </header>
+              <div class="quick-actions">
+                <button class="btn-quick" type="button">
+                  <i class="fa-solid fa-truck-fast"></i>
+                  Planifier un réassort
+                </button>
+                <button class="btn-quick" type="button">
+                  <i class="fa-solid fa-bell"></i>
+                  Créer une alerte stock
+                </button>
+                <button class="btn-quick" type="button">
+                  <i class="fa-solid fa-user-plus"></i>
+                  Inviter un collaborateur
+                </button>
+              </div>
+              <ul class="inventory-kpis">
+                <li>
+                  <span class="kpi-value">92%</span>
+                  <span class="kpi-label">Commandes livrées à temps</span>
+                </li>
+                <li>
+                  <span class="kpi-value warning">8</span>
+                  <span class="kpi-label">Produits sous le seuil minimum</span>
+                </li>
+                <li>
+                  <span class="kpi-value success">+18%</span>
+                  <span class="kpi-label">Rotation des stocks ce mois-ci</span>
+                </li>
+              </ul>
+              <div class="inventory-note">
+                <i class="fa-solid fa-circle-info"></i>
+                Synchronisation ERP effectuée il y a 12 minutes.
+              </div>
+            </article>
           </div>
 
           <!-- Gestion des Stocks -->
