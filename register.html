@@ -26,8 +26,11 @@
         <!-- Partie gauche : Formulaire -->
         <article class="login-form">
           <h1>S'inscrire à StockManager<br />Dashboard</h1>
+          <p class="login-subtitle">
+            Créez votre compte pour préparer vos inventaires et collaborer avec votre équipe.
+          </p>
 
-          <form action="index.html" method="get">
+          <form action="index.html" method="get" aria-label="Formulaire d'inscription">
             <div class="form-group">
               <label for="lastname">Nom</label>
               <input
@@ -83,7 +86,10 @@
               />
             </div>
 
-            <button type="submit" class="btn-primary">S'inscrire</button>
+            <button type="submit" class="btn-primary">
+              <i class="fa-solid fa-user-plus"></i>
+              S'inscrire
+            </button>
 
             <div class="links">
               <p>
@@ -102,6 +108,27 @@
             Gérez vos appareils électroniques, vos entrées et vos sorties de
             stock facilement avec une interface claire et rapide.
           </p>
+
+          <div class="login-highlight">
+            <span class="highlight-badge">Essai gratuit 14 jours</span>
+            <p>Onboarding guidé, modèles de catalogues et tableau de bord personnalisable.</p>
+          </div>
+
+          <ul class="login-benefits" aria-label="Fonctionnalités incluses">
+            <li><i class="fa-solid fa-layer-group"></i> Catégories illimitées</li>
+            <li><i class="fa-solid fa-bell"></i> Alertes de réassort automatiques</li>
+            <li><i class="fa-solid fa-cloud-arrow-up"></i> Sauvegarde quotidienne</li>
+          </ul>
+
+          <div class="login-meta">
+            <span><i class="fa-solid fa-user-shield"></i> Contrôle des accès</span>
+            <span><i class="fa-solid fa-globe"></i> Interface multilingue</span>
+          </div>
+
+          <a class="login-secondary-link" href="autres/pages/dashboard.html">
+            Explorer la démo interactive
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </aside>
       </section>
     </main>

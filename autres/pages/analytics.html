@@ -49,12 +49,32 @@
 
     <!-- 🔝 TOPBAR -->
     <header class="topbar">
-      <h1>Gestion de Stock - Produits Électroniques</h1>
+      <div class="topbar-left">
+        <div class="title-group">
+          <h1>Gestion de Stock - Produits Électroniques</h1>
+          <p class="topbar-subtitle">Analyse des performances et des ventes</p>
+        </div>
+        <form class="topbar-search" role="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            placeholder="Rechercher un rapport, une période..."
+            aria-label="Rechercher un rapport"
+          />
+        </form>
+      </div>
       <div class="user-top">
-        <i class="fa-solid fa-bell"></i>
-        <span class="notif-badge">3</span>
-        <i class="fa-solid fa-user"></i>
-        <span class="username">Administrateur</span>
+        <button class="btn-icon" type="button" aria-label="Ouvrir le centre de notifications">
+          <i class="fa-solid fa-bell"></i>
+          <span class="notif-badge">3</span>
+        </button>
+        <button class="btn-icon" type="button" aria-label="Afficher les paramètres rapides">
+          <i class="fa-solid fa-sliders"></i>
+        </button>
+        <div class="user-badge">
+          <span class="username">Administrateur</span>
+          <i class="fa-solid fa-user"></i>
+        </div>
       </div>
     </header>
 
