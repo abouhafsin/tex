@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Ticket</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <div class="ticket ticket-back">
+        <header>
+          <span class="tag">BOARDING PASS</span>
+          <span class="class">BUSINESS CLASS</span>
+        </header>
+        <div class="body">
+          <div class="flight">
+            <span class="label">NOM DU PASSAGER</span>
+            <span class="value">JOHN DOE</span>
+          </div>
+          <div class="route">
+            <span class="city">NEW YORK CITY</span>
+            <span class="code">NYRC</span>
+            <span class="arrow">&#9992;</span>
+            <span class="city">SAN FRANCISCO</span>
+            <span class="code">SFSC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket ticket-front">
+        <header>
+          <span class="title">AIR TICKET</span>
+          <div class="details">
+            <span class="tag">BOARDING PASS</span>
+            <span class="class">BUSINESS CLASS</span>
+            <span class="company">AIR COMPANY</span>
+          </div>
+        </header>
+
+        <section class="ticket-body">
+          <div class="passenger">
+            <span class="label">NAME OF PASSENGER</span>
+            <span class="value">JOHN DOE</span>
+          </div>
+
+          <div class="meta">
+            <div>
+              <span class="label">FROM</span>
+              <span class="value">NEW YORK CITY</span>
+              <span class="code">NYRC</span>
+            </div>
+            <div>
+              <span class="label">TO</span>
+              <span class="value">SAN FRANCISCO</span>
+              <span class="code">SFSC</span>
+            </div>
+            <div>
+              <span class="label">DATE</span>
+              <span class="value">14 JAN'21</span>
+            </div>
+            <div>
+              <span class="label">BOARDING TIME</span>
+              <span class="value">10:20</span>
+            </div>
+          </div>
+
+          <div class="seating">
+            <div>
+              <span class="label">GATE</span>
+              <span class="value">23</span>
+            </div>
+            <div>
+              <span class="label">SEAT</span>
+              <span class="value">21B</span>
+            </div>
+          </div>
+
+          <div class="qr">
+            <div class="code"></div>
+            <span class="flight-id">FLT LU1042</span>
+          </div>
+        </section>
+
+        <footer>
+          <div class="stub">
+            <span class="tag">BOARDING PASS</span>
+            <span class="class">BUSINESS CLASS</span>
+          </div>
+          <div class="stub-meta">
+            <div>
+              <span class="label">GATE</span>
+              <span class="value">23</span>
+            </div>
+            <div>
+              <span class="label">SEAT</span>
+              <span class="value">21B</span>
+            </div>
+            <div>
+              <span class="label">BOARDING</span>
+              <span class="value">10:20</span>
+            </div>
+          </div>
+          <div class="stub-route">
+            <span class="city">NEW YORK</span>
+            <span class="code">NYRC</span>
+            <span class="arrow">&#9992;</span>
+            <span class="city">SAN FRANCISCO</span>
+            <span class="code">SFSC</span>
+          </div>
+          <div class="stub-note">
+            <span class="label">GATE CLOSES 30 MINUTES BEFORE DEPARTURE</span>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
